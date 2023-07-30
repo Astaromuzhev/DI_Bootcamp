@@ -24,7 +24,7 @@ let BLACK = {
     BMI : function(){
         return this.mass/this.heigth;
     }
-}
+} 
 
 switch (Math.max(STAR.BMI, BLACK.BMI)){
     case STAR.BMI:
