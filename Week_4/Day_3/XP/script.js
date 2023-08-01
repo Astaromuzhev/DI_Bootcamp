@@ -16,8 +16,8 @@ function playTheGame(){
                         alert("Sorry, its not goof number! Goodbye");
                     } else {
                         let computerNumber = Math.round(Math.random()*10);
-                        console.log(`computerNumber is ${computerNumber}`);
-                        console.log(`userNumber is ${userNumber}`);                        
+                        //console.log(`computerNumber is ${computerNumber}`);
+                        //console.log(`userNumber is ${userNumber}`);                        
                         compareNumbers(userNumber,computerNumber);
                     }
                 }
@@ -31,19 +31,19 @@ function playTheGame(){
                 let userNumber;
                 let exitFlag = true;
                 userNumber = prompt("Please, enter the number up 0 to 10");
-                console.log(userNumber);
+                //console.log(userNumber);
                 if (userNumber == null)
                 return;
                 do {
                     
                     if (isNaN(userNumber) || userNumber == null){
                         userNumber = prompt("Sorry, Not a number! Please, enter correct number up 0 to 10");
-                        console.log(userNumber);
+                        //console.log(userNumber);
                     } else {
                         userNumber = Number(userNumber);
                         if (!(userNumber>0 && userNumber<10)){
                             userNumber = prompt("Sorry, its not good number! Please, enter correct number up 0 to 10");
-                            console.log(userNumber);
+                            //console.log(userNumber);
                         } else {
                             exitFlag = false;
                         }
@@ -55,8 +55,8 @@ function playTheGame(){
                 userNumber = Number(userNumber);
     
                 let computerNumber = Math.round(Math.random()*10);
-                console.log(`computerNumber is ${computerNumber}`);
-                console.log(`userNumber is ${userNumber}`);                        
+                //console.log(`computerNumber is ${computerNumber}`);
+                //console.log(`userNumber is ${userNumber}`);                        
                 compareNumbers(userNumber,computerNumber);
         }
     }
@@ -67,13 +67,13 @@ function playTheGame(){
         do {
                 if (userNumber == computerNumber){
                     exitFlag = true;
-                    console.log("WINNER");
+                    //console.log("WINNER");
                     alert("WINNER!");
                 } else if (userNumber < computerNumber) {
-                    console.log("Your number is smaller then the computer’s, guess again");
+                    //console.log("Your number is smaller then the computer’s, guess again");
                     userNumber = prompt("Your number is smaller then the computer’s, guess again");
                 } else {
-                    console.log(("Your number is bigger then the computer’s, guess again"));
+                    //console.log(("Your number is bigger then the computer’s, guess again"));
                     userNumber = prompt("Your number is bigger then the computer’s, guess again");
                 }
                 i++;
