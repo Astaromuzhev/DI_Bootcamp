@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="background_block">
+            <div class="quote_div">
+                <div class="show_quote_area">
+                    <button class="show_quote_but" onClick="generateRandomQuote(event)">Generate Quote</button>
+                </div>
+                <div class="form_area">
+                    <form onsubmit="addNewQuoteToVocablory(event)"  id="add_quote_form_id">
+                        <textarea name="textarea" id="quote_form_text" placeholder="Quote"></textarea><br>
+                        <input type="text" id="quote_form_author" placeholder="Author"><br>
+                        <button class="show_quote_but" id="add_button">Click for add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="button_panel">
+                <button class="button_bottom" onclick="countCharacterSpaceIncl()"><img src="./IMAGES/file-signature-solid.svg"></button>
+                <button class="button_bottom" onclick="countCharacterWOSpace()"><img src="./IMAGES/pen-nib-solid.svg"></button>
+                <button class="button_bottom" onclick="countNumberOfWords()"><img src="./IMAGES/pen-fancy-solid.svg"></button>
+                <button class="button_bottom" onclick="addLikeToQuote()"><img src="./IMAGES/thumbs-up-solid.svg"></button>
+                <button class="button_bottom" onclick="openSearch(event)"><img src="./IMAGES/magnifying-glass-solid.svg"></button>
+            </div>
+        
+        </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
