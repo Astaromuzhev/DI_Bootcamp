@@ -120,7 +120,8 @@ countNumberOfWords = () => arr.forEach( (element) => console.log(element.quote,e
 /*ASTAR 26/08/2023 add like*/
 addLikeToQuote = () => {
     if (!!document.getElementById("quote_text_id")){
-        arr[randomNum].likes = arr[randomNum].likes+1;//arr[randomNum].likes++ doesnt  work, Daniel, why?
+        arr[randomNum].likes++;
+       // arr[randomNum].likes = arr[randomNum].likes+1;//arr[randomNum].likes++ doesnt  work, Daniel, why?
         console.log(randomNum, arr);
     }
 }
