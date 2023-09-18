@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/Ligth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="body_area">
+        <div class="search_area">
+            <form class="search_form" id="search_form_id" onsubmit="getWweatherByCity(event)">
+                <input class="search_city" id="search_city_id" type="text" placeholder="Search for a city">
+                <input class="search_button" id="search_button_id" type="submit" value="">
+                <!-- <i onclick="submit" class="fa fa-search"></i></input> -->
+            </form>
+        </div>
+        <div class = "main_area">
+            <h1>Simple Weather App</h1>
+            <div id="cards_area">
+                <label class="slider-container">
+                    <input onchange="changeScale()" id="chack_box_id" class="hide_check_box" type="checkbox">
+                <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="popup_applet_id" class="popup_applet">
+        <div class="popup_applet_content">
+            <span class="popup_applet_close_button"  onclick="closePopupApplet()" id="popup_applet_close_button_id">&#10006;</span>
+            <h2 class="popup_applet_title">Opps, something wrong</h2>
+            <p id="popup_applet_text_msg_id" class="popup_applet_text_msg">Location is wrong! Please, enter correct location</p>
+        </div>
+    </div>    
+    <script src="weather.js"></script>
+</body>
+</html>

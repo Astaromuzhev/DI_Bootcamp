@@ -1,0 +1,152 @@
+* {/*Daniel's suggestion */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Dancing Script', cursive;
+}
+.search_form {
+    display: flex;
+    width: 300px;
+    position:relative;
+}
+.search_city {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position:relative;
+}
+.search_button {
+    position: absolute;
+    background: url("../images/search.svg");
+    width: 25px; 
+    height: 25px; 
+    right: 2px;
+    top:1px;
+    border:none;    
+}
+.search_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(78, 6, 78);
+}
+.main_area{
+    background-color: rgb(166, 59, 166);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 30px;
+}
+#cards_area{
+    display: flex;
+    justify-content: center;
+}
+.card_city{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    height: 240px;
+	padding: 20px;
+	background-color: lightcyan;
+	border-radius: 12px;
+	margin: 15px;
+    position:relative;
+}
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+/*styling checkbox*/
+ .slider-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightcyan;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:  rgb(78, 6, 78);
+    border-radius: 50%;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: lightcyan;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+/*Hide real check box*/
+.hide_check_box {
+    display: none;
+}
+/*Popup styles*/
+.popup_applet {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup_applet_content{
+    background-color: #fff;
+    margin: 10% auto;
+    border-radius: 5px;
+    width: 60%;
+    height: 60%;
+    position: relative;
+}
+.popup_applet_title
+{
+    background-color: black;
+    color : white;
+    height: 10%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup_applet_text_msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.popup_applet_close_button {
+    color: white;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    fonts-size: 16px;
+    cursor: pointer;
+}
